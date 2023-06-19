@@ -268,7 +268,9 @@
 
     .notice__wrap {
         left: 13.5%;
+        right: 13.5%;
         top: 23.5%;
+        outline: 1px solid red;       
     }   
 
     .notice__slider .slick-next, .notice__slider .slick-prev {
@@ -372,6 +374,7 @@
         width: 1400px;
         margin: 0 auto;      
         left: 0;
+        right: 0;
         top: 27.5%;
     }
 
