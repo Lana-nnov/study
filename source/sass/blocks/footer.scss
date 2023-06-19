@@ -1,0 +1,33 @@
+.footer {
+    background-color: #1D1A1A;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.footer__logo {
+    width: 196px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Ubuntu-light";
+
+    svg {
+        padding: 0 10px;
+    }
+
+    span {
+        color: #0ED984;  
+        font-family: "Ubuntu-medium";
+    }
+
+}
+
+@media (min-width: $tablet-width) {
+    .footer__logo {        
+        margin: 0;
+    }
+}    

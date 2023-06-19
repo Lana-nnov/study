@@ -1,0 +1,60 @@
+.button {
+    display: inline-block;
+    border: 2px dashed #ffffff;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 140px;
+    border-radius: 5px;    
+    padding: 15px 50px 17px;
+    font-size: 20px;
+    line-height: 1.2;    
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;  
+    
+    &:hover {
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        transition: all 0.3s;
+    }
+
+    &:active {
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        transition: all 0.3s;
+    }
+}
+
+.button--green {
+    &:hover {
+        color: #0ED984;        
+    }
+
+    &:active {
+        color: #0ED984;        
+    }
+}
+
+.button--blue {
+    &:hover {
+        color: #3577F6;   
+    }
+
+    &:active {
+        color: #3577F6;   
+    }
+}
+
+.button--pink {
+    &:hover {
+        color: #D72DF3;              
+    }
+
+    &:active {
+        color: #D72DF3;              
+    }
+}
+
+
+

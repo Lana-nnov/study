@@ -1,0 +1,115 @@
+.form-section {
+    padding-top: 75px;
+    padding-bottom: 41px;
+    background-color: #f3f3f3;
+}
+
+.form-section__title {
+    @include adaptiv-font(66, 36);
+    line-height: 1.15;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0.41em;
+}
+
+.form-section__text {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    font-family: "Ubuntu-light";
+}
+
+.form-section__add {
+    color: #A6A6A6;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: "Ubuntu-light";
+    text-align: center;
+
+    span {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #A6A6A6;
+        }
+    }
+}
+
+.form-section__form  {
+    margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+    .form-section {
+        padding-bottom: 80px;
+    }
+
+    .form-section__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-section__title {
+        order: 1;
+    }
+
+    .form-section__form {
+        order: 2;
+    }
+
+    .form-section__text {
+        order: 3;
+    }
+
+    .form-section__add {
+        order: 4;
+        align-self: start;
+    }
+
+   
+}    
+
+@media (min-width: 1280px) {
+    .form-section__wrap {
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+    }
+}    
+
+
+@media (min-width: $desktop-width) {
+
+    .form-section {
+        padding-bottom: 123px;
+    }
+
+    .form-section__wrap {
+        grid-template-columns: 1fr 820px;
+    }
+
+    .form-section {
+        padding-top: 150px;
+    }    
+
+    .form-section__title {
+        font-size: 66px;
+        margin-bottom: 5px;
+    }
+
+    .form-section__text {
+        padding-top: 20px;
+        max-width: 430px;
+    }
+
+}    

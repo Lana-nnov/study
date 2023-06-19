@@ -1,0 +1,91 @@
+.form__text {
+    padding-left: 15px;
+    height: 65px;
+    font-family: "Ubuntu-regular";
+    color: #1D1A1A;
+    font-size: 20px;
+    line-height: 65px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+
+    &::placeholder {
+        color: #C5C5C5;
+    }
+
+    &:hover {
+        &::placeholder {
+            color: #999999;
+        }
+    }
+
+    &:active {
+        &::placeholder {
+            color: #999999;
+        }
+    }
+}
+
+.form__send {
+    display: inline-block;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 140px;  
+    width: 100%; 
+    padding: 20px 20px;
+    font-size: 20px;
+    line-height: 1.2;    
+    text-align: center;
+    color: #ffffff;
+    background-color: #138F5B;
+    box-sizing: border-box;
+    
+    &:hover {
+        background-color: #04643C;
+        transition: all 0.3s;
+    }
+
+    &:active {
+        background-color: #04643C;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width: 1280px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;    
+    }
+
+    .form__send {
+        width: auto;
+        grid-column: 1/2;
+
+
+    }
+    
+}    
+
+@media (min-width: $desktop-width) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 220px;
+        grid-template-rows: auto;
+        justify-content: space-between;
+        column-gap: 20px;    
+        align-items: end;
+    }
+
+    .form__text {
+        margin-bottom: 0;
+    }
+
+    .form__send {
+        grid-column: 3/4;
+        grid-row: auto;
+    }
+}    
