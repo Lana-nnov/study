@@ -5,8 +5,8 @@
     noticeSlider.slick({
       dots: true,
       arrows: true,
-      //autoplay: true,
-      //autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive: [{
         breakpoint: 768,
         settings: {
